@@ -1,0 +1,9 @@
+build:
+  docker:
+    web: Dockerfile
+  config:
+    WORKDIR: app
+    API_URL: https://gomi-api.herokuapp.com
+    # 例) API_URL: https://my-app.herokuapp.com
+run:
+  web: yarn run start
